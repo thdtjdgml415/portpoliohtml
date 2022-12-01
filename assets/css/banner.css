@@ -1,0 +1,33 @@
+.banner1 {
+    width: 100%;
+    height: 176px;
+    background-color: #FFEB26;
+    border: 6px solid #000;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.banner1 .banner1__desc {
+    font-size: 4.2vw;
+    text-shadow: 5px 5px #fff;
+    font-weight: normal;
+}
+
+.banner1 img {
+    position: absolute;
+    width: 25%;
+    left: -10px;
+    top: -40px;
+    z-index: 10;
+}
+
+@media (max-width: 800px) {
+    .banner1 .banner1__desc {
+        font-size: 40px;
+    }
+
+}
