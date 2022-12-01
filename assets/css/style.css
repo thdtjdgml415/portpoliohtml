@@ -2,6 +2,15 @@
 @import url(./common.css);
 @import url(./font.css);
 @import url(./header.css);
-@import url(./banner.css);
+
+
+/* section */
 @import url(./section1.css);
 @import url(./section2.css);
+@import url(./section3.css);
+
+
+
+/* baner */
+@import url(./banner.css);
+@import url(./banner2.css);
