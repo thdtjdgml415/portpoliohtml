@@ -1,0 +1,71 @@
+#banner4 {
+    width: 100%;
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.banner4__wrap {
+    width: 100%;
+    background: #FF8ED8;
+    border-radius: 20px;
+    border: 6px solid #000;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    z-index: -2;
+    margin-bottom: 45px;
+
+}
+
+.banner4__eye {
+    width: 452px;
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translate(-50%, -110%);
+}
+
+.banner4__desc {
+    font-family: "OKChan";
+    display: inline-block;
+    color: #fff;
+    font-size: 13vw;
+    -webkit-text-stroke: 6px #000;
+    text-shadow: 10px 10px #000;
+    font-weight: normal;
+    z-index: 10;
+    line-height: 663px;
+}
+
+.banner4__sub__desc {
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    font-size: 20px;
+    text-align: left;
+}
+
+.banner4__glasses {
+    width: 32%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner4__bg {
+    z-index: -2;
+    position: absolute;
+    left: 0;
+    top: -600px;
+    width: 100%;
+}
+
+.banner4__wrap .myphoto {
+    width: 20vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,74 @@
+.footer__inner {
+    width: 100%;
+
+    position: relative;
+}
+
+.footer__inner .footer__desc {
+    font-size: 15rem;
+    font-family: "OKChan";
+    text-align: center;
+    color: #fff;
+    -webkit-text-stroke: 6px #000;
+    text-shadow: 10px 10px #000;
+}
+
+.footer__inner .footer__deco1 {
+    background-image: url(../img/music.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 17%;
+    height: 273px;
+    position: absolute;
+    left: 10%;
+    bottom: -20%;
+
+}
+
+.footer__inner .footer__deco2 {
+    background-image: url(../img/HeadsetGIF.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%;
+    height: 273px;
+    position: absolute;
+    left: 25%;
+    top: -20%;
+
+}
+
+.footer__inner .footer__deco3 {
+    background-image: url(../img/pig.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30%;
+    height: 518px;
+    position: absolute;
+    left: 30%;
+    bottom: -50%;
+
+}
+
+.footer__inner .footer__deco4 {
+    background-image: url(../img/Nauto.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%;
+    height: 273px;
+    position: absolute;
+    right: 18%;
+    top: 0%;
+
+}
+
+.footer__inner .footer__deco5 {
+    background-image: url(../img/10_Hand.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%;
+    height: 273px;
+    position: absolute;
+    right: 0%;
+    bottom: -10%;
+
+}

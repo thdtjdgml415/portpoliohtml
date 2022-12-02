@@ -2,12 +2,38 @@
     width: 100%;
     height: 1020px;
     border-radius: 20px;
-    margin-bottom: 30px;
 }
 
 .game__wrap .game__search {
     width: 100%;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.game__wrap .game__search .search__button__box {
+    width: 40%;
+    height: 168px;
+    background-color: #FFEB26;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: 6px solid #000;
+    box-shadow: 10px 10px #000;
+
+}
+
+.game__wrap .game__search .search__button__box .search__button {
+    font-family: "OKChan";
+    font-size: 5rem;
+    color: #fff;
+    -webkit-text-stroke: 5px #000;
+    text-shadow: 10px 10px #000;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .game__wrap .game__search img {
@@ -15,6 +41,7 @@
     border-radius: 20px;
 }
 
+/* 라벨 */
 .game__wrap .game__label {
     width: 100%;
     border: 6px solid #000;
@@ -34,6 +61,8 @@
     width: 10%;
     margin: 0 30px;
 }
+
+/* 라벨 */
 
 .game__wrap .game__inner {
     width: 100%;
@@ -83,6 +112,7 @@
     color: #fff;
 }
 
+/* 라벨2 */
 .game__wrap .game__label2 {
     width: 100%;
     border: 6px solid #000;
@@ -96,6 +126,7 @@
     padding: 9px 30px;
     box-sizing: border-box;
     border-radius: 20px;
+
 }
 
 .game__wrap .game__label2 img {
@@ -103,5 +134,4 @@
     margin: 0 100px;
     position: absolute;
     right: 0;
-
 }
