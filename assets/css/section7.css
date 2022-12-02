@@ -1,0 +1,107 @@
+.game__wrap {
+    width: 100%;
+    height: 1020px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.game__wrap .game__search {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.game__wrap .game__search img {
+    border: 6px solid #000;
+    border-radius: 20px;
+}
+
+.game__wrap .game__label {
+    width: 100%;
+    border: 6px solid #000;
+    display: flex;
+    align-items: center;
+    font-size: 5rem;
+    background: #C58AF3;
+    color: #fff;
+    text-shadow: 5px 5px #000;
+    margin-bottom: 20px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.game__wrap .game__label img {
+    width: 10%;
+    margin: 0 30px;
+}
+
+.game__wrap .game__inner {
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.game__inner .game__tetris {
+    width: 49.5%;
+    border: 6px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.game__tetris .tetis__button {
+    font-family: "OKChan";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7rem;
+    -webkit-text-stroke: 3px #EC41B1;
+    text-shadow: 10px 10px #EC41B1;
+    color: #fff;
+}
+
+.game__inner .game__card {
+    width: 49.5%;
+    border: 6px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.game__card .card__button {
+    font-family: "OKChan";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7rem;
+    -webkit-text-stroke: 3px #1965C9;
+    text-shadow: 10px 10px #1965C9;
+    color: #fff;
+}
+
+.game__wrap .game__label2 {
+    width: 100%;
+    border: 6px solid #000;
+    display: flex;
+    align-items: center;
+    font-size: 5rem;
+    background: #C58AF3;
+    color: #fff;
+    text-shadow: 5px 5px #000;
+    margin-bottom: 20px;
+    padding: 9px 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.game__wrap .game__label2 img {
+    width: 15%;
+    margin: 0 100px;
+    position: absolute;
+    right: 0;
+
+}

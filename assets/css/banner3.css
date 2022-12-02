@@ -1,0 +1,60 @@
+#banner3 {
+    width: 100%;
+    position: relative;
+}
+
+.banner3__wrap {
+    width: 100%;
+    height: 663px;
+    background: #FFEB26;
+    border-radius: 20px;
+    border: 6px solid #000;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    z-index: -2;
+    margin-bottom: 45px;
+}
+
+.banner3__eye {
+    width: 618px;
+    position: absolute;
+    top: 370px;
+    left: 50%;
+    transform: translate(-50%, -110%);
+}
+
+.banner3__desc {
+    font-family: "OKChan";
+    display: inline-block;
+    color: #fff;
+    font-family: "OKChan";
+    font-size: 15vw;
+    -webkit-text-stroke: 6px #000;
+    text-shadow: 10px 10px #000;
+    font-weight: normal;
+    z-index: 10;
+    line-height: 663px;
+}
+
+.banner3__sub__desc {
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    font-size: 20px;
+}
+
+.banner3__glasses {
+    width: 32%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner3__wrap .banner3__bg {
+    position: absolute;
+    left: 0;
+    top: -200px;
+    z-index: -1;
+}
