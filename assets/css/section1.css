@@ -1,6 +1,6 @@
 .main {
     width: 100%;
-    height: 718px;
+    height: 80vh;
     border-radius: 20px;
     border: 6px solid #000;
     position: relative;
@@ -62,21 +62,21 @@
 
 .main>.section1__img__inner img:nth-child(1) {
     position: absolute;
-    width: 390px;
+    width: 1vw;
     left: 5%;
     top: 40%;
 }
 
 .main>.section1__img__inner img:nth-child(2) {
     position: absolute;
-    width: 276px;
+    width: 2vw;
     right: 32%;
     top: 30%;
 }
 
 .main>.section1__img__inner img:nth-child(3) {
     position: absolute;
-    width: 514px;
+    width: 2vw;
     right: 2%;
     bottom: 5%;
 }

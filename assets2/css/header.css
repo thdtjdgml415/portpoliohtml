@@ -1,0 +1,39 @@
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 96vw;
+    text-align: center;
+    align-items: center;
+    margin: 1vw 2vw;
+}
+
+.header__wrap h1 {
+    font-size: 2.5vw;
+    position: relative;
+
+}
+
+.header__wrap h1::before {
+    content: '';
+    height: 0.4vw;
+    background: #000;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -0.3vw;
+    border-radius: 50px;
+}
+
+.header__wrap .header__left {
+    border: 0.3vw solid #000;
+    padding: 0.5vw 2vw;
+    border-radius: 3vw;
+    font-size: 1.5vw;
+}
+
+.header__wrap .header__right {
+    border: 0.3vw solid #000;
+    padding: 0.5vw 2vw;
+    border-radius: 3vw;
+    font-size: 1.5vw;
+}

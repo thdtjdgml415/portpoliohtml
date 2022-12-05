@@ -1,0 +1,320 @@
+/* secction1 */
+.section1__box {
+    width: 96vw;
+    background-color: #FFEB26;
+    margin: 2vw;
+    border: 0.3vw solid #000;
+    border-radius: 1vw;
+    position: relative;
+}
+
+.section1__box__inner {
+    font-size: 4.5vw;
+    padding: 0.4vw;
+    text-align: center;
+    text-shadow: 0.2vw 0.2vw #fff;
+}
+
+.section1__img {
+    background-image: url(../img/star.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0.5vw;
+    top: 0;
+    padding: 10vw;
+    z-index: 20;
+}
+
+/* section1 */
+
+/* section2 */
+.section2__box {
+    width: 96vw;
+    padding: 1vw 2vw;
+    margin: 1vw 2vw;
+    background: #FF6DCD;
+    border: 0.3vw solid #000;
+    border-radius: 1vw;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .section2__box::before {
+    content: '';
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/noise.png);
+    background-size: contain;
+    z-index: 20;
+} */
+
+.section2__box__inner {}
+
+.section2__box__inner .section2__desc {
+    font-family: "OKChan";
+    text-align: center;
+    font-size: 14.6vw;
+    color: #FFEB26;
+    -webkit-text-stroke: 0.1vw #000;
+    text-shadow: 0.3vw 0.3vw #000;
+    position: relative;
+    z-index: 10;
+}
+
+.section2__box__inner .section2__desc__sub {
+    font-family: "OKChan";
+    font-size: 14.6vw;
+    margin-left: 16vw;
+    margin-top: -14vw;
+    color: #FFEB26;
+    -webkit-text-stroke: 0.1vw #000;
+    text-shadow: 0.3vw 0.3vw #000;
+    position: relative;
+    z-index: 20;
+    padding-bottom: 6vh
+}
+
+.svg_bg {
+    animation: spin 25s infinite linear;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+}
+
+.svg_bg svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section2__img1 {
+    background-image: url(../img/section1img1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10vw;
+    border: 0.1vw solid #000;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    left: 5.5vw;
+    bottom: 5vw;
+    z-index: 11;
+}
+
+.section2__img2 {
+    background-image: url(../img/section1img2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10vw;
+    border: 0.1vw solid #000;
+    width: 14vw;
+    height: 14vw;
+    position: absolute;
+    right: 32vw;
+    top: 13vw;
+    z-index: 10;
+}
+
+.section2__img3 {
+    background-image: url(../img/section1img3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25vw;
+    border: 0.1vw solid #000;
+    width: 27vw;
+    height: 27vw;
+    position: absolute;
+    right: 2vw;
+    top: 9vw;
+    z-index: 10;
+}
+
+.section2__bottom {
+    position: absolute;
+    left: 0;
+    bottom: -35vw;
+    z-index: 0
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* section2 */
+
+/* section3*/
+.section3__box__inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 96vw;
+    justify-content: space-between;
+    margin: 1vw 2vw;
+    border-radius: 1vw;
+    margin-bottom: 5vw;
+}
+
+.section3__box__inner .section3__left__box {
+    width: 45.5vw;
+    height: 40vw;
+    border: 0.3vw solid #000;
+    position: relative;
+    border-radius: 1vw;
+    background-image: url(../img/section3bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+.section3__left__img {
+    background-image: url(../img/section3photo1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 2vw;
+    padding: 15vw 23vw;
+
+}
+
+.section3__left__button {
+    position: absolute;
+    right: 3vw;
+    bottom: 3vw;
+    padding: 0.5vw 4.7vw;
+    border-radius: 1vw;
+    font-size: 4vw;
+    background: #FFEB26;
+    border: 0.3vw solid #000;
+    box-shadow: 0.5vw 0.5vw #000;
+    text-shadow: 0.2vw 0.2vw #fff;
+}
+
+.section3__box__inner .section3__right__box {
+    width: 49.5vw;
+    border: 0.3vw solid #0000;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section3__right__box .section3__right__top {
+    padding: 1.79vw;
+    border: 0.3vw solid #000;
+    background: #FFEB26;
+    font-size: 4.1vw;
+    text-align: center;
+    margin-bottom: 1.5vw;
+    box-shadow: 0.5vw 0.5vw #000;
+    border-radius: 1vw;
+    text-shadow: 0.2vw 0.2vw #fff;
+}
+
+.section3__right__box .section3__right__bottom {
+    padding: 14vw 24vw;
+    border: 0.3vw solid #000;
+    background-image: url(../img/section3bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1vw;
+    position: relative;
+}
+
+.section3__right__bottom .section3__img1 {
+    background-image: url(../img/FINGGER.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 5vw;
+    top: 0;
+    padding: 10vw 13vw;
+    transform: rotate(30deg);
+    z-index: 10;
+}
+
+.section3__right__bottom .section3__img2 {
+    background-image: url(../img/flag.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 17vw;
+    top: 0;
+    padding: 10vw 13vw;
+}
+
+.section3__right__bottom .section3__img3 {
+    background-image: url(../img/10_Hand.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10vw;
+}
+
+/* /section3*/
+/* section4 */
+.banner1__wrap {
+    width: 96vw;
+    padding: 1vw 2vw;
+    border: 0.3vw solid #000;
+    margin: 1vw 2vw;
+    border-radius: 1vw;
+    text-align: center;
+    background: #60A6FE;
+    background-image: url(../img/banner1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.banner1__eye {
+    position: relative;
+    display: inline-block;
+    left: 0;
+    top: -17vw;
+    background-image: url(../img/눈.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 16vw;
+}
+
+.banner1__desc {
+    position: relative;
+    top: 10vw;
+    font-size: 10vw;
+    font-family: "OKChan";
+    color: #fff;
+    text-shadow: 5px 5px #000;
+}
+
+.banner1__img {
+    position: relative;
+    left: 30vw;
+    top: -10vw;
+    background-image: url(../img/HeadsetGIF.gif);
+    padding: 10vw 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+/* /section4 */
