@@ -28,11 +28,6 @@
   box-sizing: border-box;
 }
 
-.section2__box.noise {
-  background-image: url(../img/noise.png);
-  background-blend-mode: color;
-}
-
 
 /* 배경 */
 .gray {
