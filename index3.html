@@ -201,9 +201,45 @@
       <script>
 
         gsap.set(".section2__desc",{opacity:0, dutration:.5});
+        // gsap.set(".section2__bottom img",{});
         // gsap.set(".section2__img1",{opacity:0, dutration:.5});
         // gsap.set(".section2__img2",{opacity:0, dutration:.5});
         // gsap.set(".section2__img3",{opacity:0, dutration:.5});
+        gsap.to(".section2__bottom", {
+        x: 0,
+        y: -1000,
+        scrollTrigger: {
+          trigger: ".section2__bottom",
+          start: "top 30%",
+          end: "bottom 10%",
+          scrub: 1,
+          markers: {
+            startColor: "blue",
+            endColor: "pink",
+            fontsize: "30px",
+          },
+          toggleClass: "red",
+          toggleActions: "none none none none",
+        },
+      });
+      gsap.from(".section2__bottom", {
+        x: 0,
+        y: 100,
+
+        scrollTrigger: {
+          trigger: "#section2",
+          start: "top 30%",
+          end: "bottom -30%",
+          scrub: 1,
+          markers: {
+            startColor: "blue",
+            endColor: "pink",
+            fontsize: "30px",
+          },
+          toggleClass: "red",
+          toggleActions: "none none none none",
+        },
+      });
 
         let t1 = gsap.timeline()
         t1.from(".section2__desc", {
