@@ -96,7 +96,8 @@
 
 @media (max-width: 486px) {
     .section2__box {
-        height: 50vh;
+        height: 100vw;
+        margin-bottom: 3vw;
     }
 
     .section2__box__inner .section2__desc {
@@ -231,3 +232,183 @@
 }
 
 /* section2 */
+
+
+/* section3*/
+.section3__box__inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 96vw;
+    justify-content: space-between;
+    margin: 1vw 2vw;
+    border-radius: 1vw;
+    margin-bottom: 7vw;
+}
+
+
+
+.section3__box__inner .section3__left__box {
+    width: 45.5vw;
+    height: 40vw;
+    border: 0.4vw solid #000;
+    position: relative;
+    border-radius: 1vw;
+    background-image: url(../img/section3bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section3__left__img {
+    background-image: url(../img/section3photo1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 2vw;
+    padding: 15vw 23vw;
+}
+
+.section3__left__button {
+    position: absolute;
+    right: 3vw;
+    bottom: 3vw;
+    padding: 0.5vw 4.7vw;
+    border-radius: 1vw;
+    font-size: 4vw;
+    background: #FFEB26;
+    border: 0.4vw solid #000;
+    box-shadow: 0.5vw 0.5vw #000;
+    text-shadow: 0.2vw 0.2vw #fff;
+}
+
+.section3__box__inner .section3__right__box {
+    width: 49.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.section3__right__box .section3__right__top {
+    padding: 1vw 0;
+    border: 0.4vw solid #000;
+    background: #FFEB26;
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 1vw;
+    height: 8vw;
+    border-radius: 1vw;
+    text-shadow: 0.2vw 0.2vw #fff;
+    width: 100%;
+    background-image: url(../img/noise.png);
+    background-blend-mode: color;
+}
+
+.section3__money1 {
+    position: absolute;
+    background-image: url(../img/money.gif);
+    background-repeat: no-repeat;
+    background-size: 20vw 10vw;
+    left: -1vw;
+    top: 0vw;
+    padding: 5vw 20vw;
+}
+
+.section3__money2 {
+    position: absolute;
+    background-image: url(../img/money.gif);
+    background-repeat: no-repeat;
+    background-size: 15vw 10vw;
+    right: 0vw;
+    top: -3vw;
+    padding: 5vw 10vw;
+}
+
+.section3__right__box .section3__right__bottom {
+    width: 100%;
+    padding: 15vw 24vw;
+    border: 0.4vw solid #000;
+    background-image: url(../img/section3bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1vw;
+    position: relative;
+}
+
+.section3__right__bottom .section3__img1 {
+    background-image: url(../img/FINGGER.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 5vw;
+    top: 0;
+    padding: 10vw 13vw;
+    transform: rotate(30deg);
+    z-index: 10;
+}
+
+.section3__right__bottom .section3__img2 {
+    background-image: url(../img/flag.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 17vw;
+    top: 0;
+    padding: 10vw 13vw;
+}
+
+.section3__right__bottom .section3__img3 {
+    background-image: url(../img/10_Hand.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10vw;
+}
+
+@media (max-width: 750px) {
+    .section3__box__inner {
+        display: block;
+    }
+
+    .section3__box__inner .section3__left__box {
+        width: 96vw !important;
+        margin-bottom: 3vw;
+    }
+
+    .section3__box__inner .section3__left__box .section3__left__img {
+        width: 100%;
+    }
+
+    .section3__right__box .section3__right__top {
+        margin-bottom: 3vw;
+        height: 20vw;
+        font-size: 8.4vw;
+        padding: 3vw 0;
+    }
+
+    .section3__box__inner .section3__right__box {
+        display: block;
+        width: 96vw !important;
+
+    }
+
+    .section3__right__bottom .section3__img1 {
+        padding: 15vw 18vw;
+        left: 20vw;
+    }
+
+    .section3__right__bottom .section3__img2 {
+        padding: 15vw 18vw;
+        left: 37vw;
+    }
+
+    .section3__right__bottom .section3__img3 {
+        padding: 15vw;
+    }
+}
+
+/* /section3*/
