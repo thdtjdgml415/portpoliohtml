@@ -852,5 +852,24 @@
                 },
             });
           </script>
+          <script>
+            const search = document.querySelector(".search__button")
+
+                gsap.from(".search__button", {
+                opacity: 0,
+                y: 0,
+                duration: 3
+            });
+
+            const button = gsap.to(".search__button", {
+                scaleX:1.5 , scaleY:1.5, scaleZ:1.5,
+                duration:0.1,
+                paused: true,
+                ease: "ease-in-out"
+            });
+            
+            search.addEventListener("mouseenter", ()=> button.play())
+            search.addEventListener("mouseleave", ()=> button.reverse())
+          </script>
   </body>
 </html>
