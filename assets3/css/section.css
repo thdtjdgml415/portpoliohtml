@@ -219,7 +219,7 @@
 .section2__bottom {
     position: absolute;
     left: 0;
-    bottom: 10vw;
+    bottom: 0vw;
     z-index: 40;
 }
 
@@ -344,7 +344,7 @@
 }
 
 .section3__right__bottom .section3__img1 {
-    background-image: url(../img/FINGGER.gif);
+    background-image: url(../img/FINGGER-min.gif);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -356,7 +356,7 @@
 }
 
 .section3__right__bottom .section3__img2 {
-    background-image: url(../img/flag.png);
+    background-image: url(../img/flag-min.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -385,7 +385,7 @@
         margin-bottom: 3vw;
     }
 
-    .section3__box__inner .section3__left__box .section3__left__img {
+    #section3__left__img {
         width: 100%;
     }
 
@@ -439,7 +439,7 @@
 
 .banner1__eye {
     position: absolute;
-    background-image: url(../img/눈.gif);
+    background-image: url(../img/눈-min.gif);
     background-repeat: no-repeat;
     background-size: contain;
     left: 35vw;
@@ -476,7 +476,7 @@
 
 .banner1__wrap .banner1__img {
     position: absolute;
-    background-image: url(../img/HeadsetGIF.gif);
+    background-image: url(../img/HeadsetGIF-min.gif);
     padding: 14vw;
     background-repeat: no-repeat;
     background-size: contain;
@@ -487,3 +487,156 @@
 }
 
 /* /section4 */
+
+/* section5 */
+#section5 {
+    width: 96vw;
+    margin: 1vw 2vw;
+    border: 0.4vw solid #000;
+    position: relative;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    background: #FF6DCD;
+    border-radius: 1vw;
+    background-image: url(../img/noise.png);
+    background-blend-mode: color;
+}
+
+.section5__wrap {
+    width: 96vw;
+}
+
+.svg__bg {
+    position: absolute;
+    animation: spin 60s infinite linear;
+    background-image: url(../img/circle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100vw;
+    left: -50vw;
+    top: -20vw;
+    z-index: 0;
+
+}
+
+.section5__wrap h2 {
+    padding: 3vw 0 1vw 0;
+    font-size: 5.2vw;
+    text-shadow: 0.4vw 0.4vw #000;
+    color: white;
+    position: relative;
+    z-index: 20;
+    text-align: center;
+}
+
+.section5__logo {}
+
+.section5__logo img {
+    padding: 2vw;
+    position: absolute;
+    width: 15vw;
+    right: 2vw;
+    top: 0;
+    z-index: 20;
+}
+
+.section5__wrap .section5__desc {
+    text-align: center;
+    font-size: 1.05vw;
+    margin-bottom: 5.2vw;
+    position: relative;
+    z-index: 20;
+    text-align: center;
+}
+
+
+.section5__inner__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20vw;
+    width: 96vw;
+}
+
+.section5__box {
+    width: 27vw;
+    border: 0.4vw solid #000;
+    border-radius: 1vw;
+    overflow: hidden;
+    position: relative;
+    z-index: 20;
+
+}
+
+/* box1 */
+.section5__box .section5__box__top1 {
+    padding: 3vw;
+    background: #8060FE;
+
+}
+
+.img__inner__box1 {
+    border: 0.4vw solid #000;
+    border-radius: 100%;
+}
+
+.section5__bottom__desc {
+    font-size: 1.85vw;
+    padding: 1.99999999vw 5.1vw;
+    text-align: left;
+    background: #5AD2B4;
+    border-top: 0.4vw solid #000;
+}
+
+/* box2 */
+
+.section5__box .section5__box__top2 {
+    padding: 3vw;
+    background: #FEBF60;
+
+}
+
+.img__inner__box2 {
+    border: 0.4vw solid #000;
+    border-radius: 100%;
+}
+
+.section5__bottom__desc2 {
+    font-size: 1.85vw;
+    padding: 1.99999999vw 6.3vw;
+    text-align: left;
+    background: #5AD2B4;
+    border-top: 0.4vw solid #000;
+}
+
+/* box3 */
+
+.section5__box .section5__box__top3 {
+    padding: 3vw;
+    background: #60A6FE;
+
+}
+
+.img__inner__box3-1 {
+    border: 0.4vw solid #000;
+    border-radius: 100%;
+}
+
+.section5__bottom__desc3 {
+    font-size: 1.85vw;
+    padding: 1.99999999vw 4.9vw;
+    text-align: left;
+    background: #5AD2B4;
+    border-top: 0.4vw solid #000;
+}
+
+.section5__moneys img {
+    position: absolute;
+    left: 0;
+    top: 40vw;
+    z-index: 20;
+}
+
+/* /section5 */
