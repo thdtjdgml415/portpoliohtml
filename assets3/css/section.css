@@ -2567,7 +2567,8 @@
     }
 
     .section12__desc1 {
-        left: 60px;
+        display: inline-block;
+        left: 30vw;
         top: 4vw;
         font-size: 7.59vw;
     }
@@ -2589,7 +2590,8 @@
     }
 
     .section12__desc2 {
-        left: 60px;
+        display: inline-block;
+        left: 30vw;
         top: 4vw;
         font-size: 7.59vw;
     }
@@ -2611,7 +2613,8 @@
     }
 
     .section12__desc3 {
-        left: 60px;
+        display: inline-block;
+        left: 30vw;
         top: 4vw;
         font-size: 7.59vw;
     }
@@ -2633,7 +2636,8 @@
     }
 
     .section12__desc4 {
-        left: 60px;
+        display: inline-block;
+        left: 30vw;
         top: 4vw;
         font-size: 7.59vw;
     }
@@ -2655,7 +2659,8 @@
     }
 
     .section12__desc5 {
-        left: 60px;
+        display: inline-block;
+        left: 30vw;
         top: 4vw;
         font-size: 7.59vw;
     }
