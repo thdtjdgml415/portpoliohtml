@@ -2029,3 +2029,143 @@
 }
 
 /*/ section9 */
+
+/* section10 */
+.game__wrap {
+    width: 96vw;
+    margin: 1vw 2vw;
+    border-radius: 1vw;
+}
+
+.search__game {
+    background-image: url(../img/lambo-jump-min.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 4.856vw 1vw;
+    border-radius: 1vw;
+    margin-bottom: 1vw;
+    border: 0.4vw solid #000;
+}
+
+.search__button {
+    position: relative;
+    left: 30vw;
+    top: 0;
+    display: inline-block;
+    background: #FFEB26;
+    border: 0.4vw solid #000;
+    width: 37vw;
+    height: 9vw;
+    box-shadow: 10px 10px #000;
+    text-align: center;
+    border-radius: 1vw;
+}
+
+.search__desc {
+    font-family: "OKChan";
+    font-size: 8vw;
+    display: inline-block;
+    position: relative;
+    top: -5vw;
+    color: #FFEB26;
+    -webkit-text-stroke: 0.1vw #000;
+    text-shadow: .3vw .3vw #000;
+}
+
+.section10__box {
+    position: relative;
+    width: 96vw;
+    background-color: #C58AF3;
+    border: 0.4vw solid #000;
+    border-radius: 1vw;
+    background-image: url(../img/noise.png);
+    background-blend-mode: color;
+    padding: 1vw 2vw;
+    margin-bottom: 1vw;
+}
+
+.section10__box__inner {
+    font-size: 3vw;
+    padding: 0.4vw;
+    text-shadow: 0.2vw 0.2vw #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.section10__box__inner img {
+    width: 7vw;
+    position: relative;
+    top: -0.3vh;
+    left: 0;
+}
+
+.section10__box__inner .desc {
+    animation: section2rail 25s linear infinite;
+}
+
+@keyframes section2rail {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.game__wrap .game__inner {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tetris__game {
+    width: 47.5vw;
+    background-image: url(../img/tetris-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 0.4vw solid #000;
+    border-radius: 1vw;
+}
+
+.tetris__game .tetris__button {
+    text-align: center;
+    font-size: 8vw;
+    font-family: "OKChan";
+    padding: 5.5vw 5vw;
+    -webkit-text-stroke: 0.1vw #000;
+    color: #FF9CDD;
+    text-shadow: .3vw .3vw #794668;
+
+}
+
+.card__game {
+    width: 47.5vw;
+    background-image: url(../img/cardgame-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 0.4vw solid #000;
+    font-family: "OKChan";
+    border-radius: 1vw;
+}
+
+.card__game .card__button {
+    text-align: center;
+    font-size: 8vw;
+    font-family: "OKChan";
+    padding: 5vw;
+    -webkit-text-stroke: 0.1vw #000;
+    color: #60A6FE;
+    text-shadow: 0.3vw 0.3vw #304F77;
+}
+
+
+
+/* /section10 */
