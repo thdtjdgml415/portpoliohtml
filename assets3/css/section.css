@@ -9,6 +9,7 @@
     width: 96vw;
     background-color: #FFEB26;
     margin: 1vw 2vw 1vw 2vw;
+    border: 0.4vw solid #000;
     border-radius: 1vw;
     background-image: url(../img/noise.png);
     background-blend-mode: color;
@@ -218,8 +219,8 @@
 .section2__bottom {
     position: absolute;
     left: 0;
-    bottom: -40vw;
-    z-index: 20;
+    bottom: 10vw;
+    z-index: 40;
 }
 
 
@@ -261,7 +262,7 @@
     background-position: center;
 }
 
-.section3__left__img {
+#section3__left__img {
     background-image: url(../img/section3photo1.png);
     background-position: center;
     background-size: contain;
@@ -283,7 +284,10 @@
     border: 0.4vw solid #000;
     box-shadow: 0.5vw 0.5vw #000;
     text-shadow: 0.2vw 0.2vw #fff;
+    transition: transform .25s cubic-bezier(.3, .7, .4, 1.5), -webkit-transform .25s cubic-bezier(.3, .7, .4, 1.5);
 }
+
+.section3__left__button:hover {}
 
 .section3__box__inner .section3__right__box {
     width: 49.5vw;

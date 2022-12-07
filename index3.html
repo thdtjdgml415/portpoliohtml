@@ -165,7 +165,7 @@
       <section id="section3">
         <div class="section3__box__inner">
           <div class="section3__left__box">
-            <div class="section3__left__img"></div>
+            <div id="section3__left__img"></div>
             <div class="section3__left__button">성희</div>
           </div>
           <div class="section3__right__box">
@@ -199,45 +199,26 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
       <script>
-
+    //   section2 Timeline
         gsap.set(".section2__desc",{opacity:0, dutration:.5});
-        // gsap.set(".section2__bottom img",{});
+        gsap.set(".section2__bottom img",{y:800});
         // gsap.set(".section2__img1",{opacity:0, dutration:.5});
         // gsap.set(".section2__img2",{opacity:0, dutration:.5});
         // gsap.set(".section2__img3",{opacity:0, dutration:.5});
+    
         gsap.to(".section2__bottom", {
         x: 0,
-        y: -1000,
+        y: -400,
         scrollTrigger: {
-          trigger: ".section2__bottom",
-          start: "top 30%",
-          end: "bottom 10%",
-          scrub: 1,
+          trigger: ".section3__box__inner",
+          start: "top 100%",
+          end: "top 20%",
+          scrub: 2.5,
           markers: {
-            startColor: "blue",
-            endColor: "pink",
-            fontsize: "30px",
-          },
-          toggleClass: "red",
-          toggleActions: "none none none none",
-        },
-      });
-      gsap.from(".section2__bottom", {
-        x: 0,
-        y: 100,
-
-        scrollTrigger: {
-          trigger: "#section2",
-          start: "top 30%",
-          end: "bottom -30%",
-          scrub: 1,
-          markers: {
-            startColor: "blue",
-            endColor: "pink",
-            fontsize: "30px",
-          },
-          toggleClass: "red",
-          toggleActions: "none none none none",
+              startColor: "blue",
+              endColor: "pink",
+              fontsize: "30px",
+            },
         },
       });
 
@@ -315,6 +296,25 @@
             duration: .1,
             scale: 1
         });
+        // section2 Timeline
+      </script>
+      <script>
+        var images = [
+            "https://images.pexels.com/photos/6482/black-and-white-man-person-hands.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb",
+            "https://images.pexels.com/photos/247791/pexels-photo-247791.png?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb",
+            "https://images.pexels.com/photos/265110/pexels-photo-265110.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb"   
+        ]
+        var coverDiv = document.getElementById('section3__left__img')
+        console.log(coverDiv)
+
+        var i = 0
+        setInterval(() => {
+            coverDiv.style.backgroundImage = 'url(' + images[i] + ')'
+            i += 1
+            if(i == images.length){
+                i = 0
+            }
+        }, 1000)
       </script>
   </body>
 </html>
