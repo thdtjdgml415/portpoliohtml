@@ -290,7 +290,7 @@
             <div class="section6__box">
               <div class="section6__box__top3">
                 <div class="img__inner__box3">
-                  <img src="./assets3/img/loading-min.gif" alt="phploading" />
+                  <img src="./assets3/img/lodingfinal.gif" alt="phploading" />
                 </div>
               </div>
               <div class="section6__bottom">
@@ -300,32 +300,89 @@
           </div>
         </div>
         <div class="section6__moneys">
-          <img src="./asset3/img/moneyS.png" alt="돈배경" />
+          <img src="./assets3/img/moneyS-min.png" alt="돈배경" />
         </div>
       </section>
       <!-- section6 -->
+      <section id="section7">
+        <div class="section7__wrap">
+          <h2>쎠 미더 머니머니머니 리액트코딩</h2>
+          <div class="section7__logo">
+            <img src="./assets2/img/reactlogo.gif" alt="phplogo" />
+          </div>
+          <div class="section7__desc">
+            열심히 공부하면서 만들었습니다. 그냥 넘어가지 말고 클릭!!!
+          </div>
+          <div class="section7__inner__box">
+            <div class="svg__bg"></div>
+            <div class="section7__box">
+              <div class="section7__box__top1">
+                <div class="img__inner__box1">
+                  <img
+                    src="./assets2/img/react1.png"
+                    alt="이미지 다운로드 사이트"
+                  />
+                </div>
+              </div>
+              <div class="section7__bottom">
+                <div class="section7__bottom__desc">
+                  <p>반응형 사이트를 만들어보았습니다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="section7__box">
+              <div class="section7__box__top2">
+                <div class="img__inner__box2">
+                  <img src="./assets2/img/react2.png" alt="php반응형사이트" />
+                </div>
+              </div>
+              <div class="section7__bottom">
+                <div class="section7__bottom__desc2">
+                  다양한 api를 이용하여 만들어보았습니다.
+                </div>
+              </div>
+            </div>
+            <div class="section7__box">
+              <div class="section7__box__top3">
+                <div class="img__inner__box3">
+                  <img src="./assets2/img/react3.png" alt="phploading" />
+                </div>
+              </div>
+              <div class="section7__bottom">
+                <div class="section7__bottom__desc3">
+                  유튜브 api를 이용하여 사이트를 만들어 보았습니다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section7__moneys">
+          <img src="./assets2/img/moneyS.png" alt="돈배경" />
+        </div>
+      </section>
+      <!-- section7 -->
     
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
       <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
       <script>
         // scrollsmooth
-        // const lenis = new Lenis({
-        // duration: 1,
-        // easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
-        // });
+        const lenis = new Lenis({
+        duration: 1,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+        });
 
-        // //get scroll value
-        // lenis.on("scroll", ({ scroll, limit, velocity, direction, progress }) => {
-        // console.log({ scroll, limit, velocity, direction, progress });
-        // });
+        //get scroll value
+        lenis.on("scroll", ({ scroll, limit, velocity, direction, progress }) => {
+        console.log({ scroll, limit, velocity, direction, progress });
+        });
 
-        // function raf(time) {
-        // lenis.raf(time);
-        // requestAnimationFrame(raf);
-        // }
+        function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+        }
 
-        // requestAnimationFrame(raf);
+        requestAnimationFrame(raf);
       </script>
       <script>
         //section2 Timeline
@@ -449,9 +506,6 @@
       <script>
         // section5
         gsap.set(".section5__moneys img",{y:2000});
-        // gsap.set(".section2__img1",{opacity:0, dutration:.5});
-        // gsap.set(".section2__img2",{opacity:0, dutration:.5});
-        // gsap.set(".section2__img3",{opacity:0, dutration:.5});
     
         gsap.to(".section5__moneys img", {
         x: 0,
@@ -468,12 +522,47 @@
                 },
             },
         });
-
-
         let t5 = gsap.timeline()
+      </script>
+      <script>
+        // section6
+        gsap.set(".section6__moneys img",{y:2000});
         
-
-
+        gsap.to(".section6__moneys img", {
+        x: 0,
+        y: -200,
+        scrollTrigger: {
+            trigger: ".section6__wrap",
+            start: "top 100%",
+            end: "bottom 0%",
+            scrub: 3,
+                markers: {
+                    startColor: "blue",
+                    endColor: "pink",
+                    fontsize: "30px",
+                },
+            },
+        });
+      </script>
+       <script>
+        // section7
+        gsap.set(".section7__moneys img",{y:2000});
+        
+        gsap.to(".section7__moneys img", {
+        x: 0,
+        y: -200,
+        scrollTrigger: {
+            trigger: ".section7__wrap",
+            start: "top 100%",
+            end: "bottom 0%",
+            scrub: 3,
+                markers: {
+                    startColor: "blue",
+                    endColor: "pink",
+                    fontsize: "30px",
+                },
+            },
+        });
       </script>
   </body>
 </html>
