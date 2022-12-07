@@ -883,6 +883,26 @@
         }
         </script>
         <script>
+            // section1
+            
+        gsap.to(".section1__box__inner .desc", {
+        x: 19,
+        y: 0,
+        scrollTrigger: {
+            trigger: ".section1__box__inner .desc",
+            start: "top 100%",
+            end: "top 20%",
+            scrub: 2.5,
+                markers: {
+                    startColor: "blue",
+                    endColor: "pink",
+                    fontsize: "30px",
+                },
+            },
+        });
+
+        </script>
+        <script>
         //section2 Timeline
         gsap.set(".section2__desc",{opacity:0, dutration:.5});
         gsap.set(".section2__bottom img",{y:800});
@@ -985,7 +1005,6 @@
       <script>
         // section3
         var images = [
-            "https://github.com/thdtjdgml415/portpoliohtml/blob/master/assets3/img/myphoto1-min.png?raw=true",
             "https://github.com/thdtjdgml415/portpoliohtml/blob/master/assets3/img/myphoto2-min.png?raw=true",
             "https://github.com/thdtjdgml415/portpoliohtml/blob/master/assets3/img/myphoto3-min.png?raw=true"   
         ]
@@ -1003,7 +1022,7 @@
       </script>
       <script>
         // section5
-        gsap.set(".section5__moneys img",{y:2000});
+        gsap.set(".section5__moneys img",{y:500});
     
         gsap.to(".section5__moneys img", {
         x: 0,
@@ -1013,6 +1032,7 @@
             start: "top 100%",
             end: "bottom 0%",
             scrub: 2.5,
+            duration: 0.1,
                 markers: {
                     startColor: "blue",
                     endColor: "pink",
@@ -1024,16 +1044,17 @@
       </script>
       <script>
         // section6
-        gsap.set(".section6__moneys img",{y:1000});
+        gsap.set(".section6__moneys img",{y:500});
         
         gsap.to(".section6__moneys img", {
         x: 0,
-        y: -200,
+        y: -100,
+        duration: 0.1,
         scrollTrigger: {
             trigger: ".section6__wrap",
             start: "top 100%",
             end: "bottom 0%",
-            scrub: 3,
+            scrub: 2,
                 markers: {
                     startColor: "blue",
                     endColor: "pink",
@@ -1044,11 +1065,12 @@
       </script>
        <script>
         // section7
-        gsap.set(".section7__moneys img",{y:1000});
+        gsap.set(".section7__moneys img",{y:500});
         
         gsap.to(".section7__moneys img", {
         x: 0,
-        y: -200,
+        y: -100,
+        duration: 0.1,
         scrollTrigger: {
             trigger: ".section7__wrap",
             start: "top 100%",
@@ -1064,11 +1086,11 @@
       </script>
         <script>
             // section8
-            gsap.set(".section8__moneys img",{y:1000});
+            gsap.set(".section8__moneys img",{y:500});
             
             gsap.to(".section8__moneys img", {
             x: 0,
-            y: -200,
+            y: -100,
             scrollTrigger: {
                 trigger: ".section8__wrap",
                 start: "top 100%",
