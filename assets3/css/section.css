@@ -503,6 +503,72 @@
     background-blend-mode: color;
 }
 
+@media (max-width: 1200px) {}
+
+@media (max-width: 760px) {}
+
+@media (max-width: 486px) {
+    .section5__wrap .section5__inner__box {
+        align-items: center;
+
+    }
+
+    .section5__wrap .section5__box {
+        width: 60%;
+        margin: 1vw 2vw 3vw 1vw;
+
+
+    }
+
+    /* box1 */
+    .section5__box .section5__box__top1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img__inner__box1 {
+        width: 60%;
+    }
+
+    /* box1 */
+    /* box2 */
+    .section5__box .section5__box__top2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img__inner__box2 {
+        width: 60%;
+    }
+
+    /* box2 */
+
+    /* box3 */
+    .section5__box .section5__box__top3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img__inner__box3 {
+        width: 60%;
+    }
+
+    /* box3 */
+    #section5 .section5__moneys {
+        display: none;
+    }
+
+    #section5 .svg__bg {
+        top: -50vw;
+        padding: 280vw;
+        left: -234vw;
+
+    }
+}
+
 .section5__wrap {
     width: 96vw;
 }
@@ -511,12 +577,12 @@
     position: absolute;
     animation: spin 60s infinite linear;
     background-image: url(../img/circle.svg);
-    background-size: cover;
+    background-size: 10000px 10000px;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 100vw;
-    left: -50vw;
-    top: -20vw;
+    padding: 250vw;
+    left: -200vw;
+    top: -150vw;
     z-index: 0;
 
 }
@@ -619,7 +685,7 @@
 
 }
 
-.img__inner__box3-1 {
+.img__inner__box3 {
     border: 0.4vw solid #000;
     border-radius: 100%;
 }
