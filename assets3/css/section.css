@@ -2169,374 +2169,30 @@
     transition: transform .25s cubic-bezier(.3, .7, .4, 1.5), -webkit-transform .25s cubic-bezier(.3, .7, .4, 1.5)
 }
 
-@media (max-width: 1200px) {
-    .section5__wrap .section5__desc {
-        font-size: 3vw;
-    }
-}
+@media (max-width: 1200px) {}
 
 @media (max-width: 760px) {}
 
-@media (max-width: 486px) {
-    #section5 {
-        margin: 1vw 2vw 3vw 2vw;
-    }
+@media (max-width: 486px) {}
 
-    .section5__wrap {
-        height: 220vw;
-    }
-
-    .section5__wrap h2 {
-        font-size: 10vw !important;
-    }
-
-    .section5__wrap .section5__desc {
-        font-size: 4vw;
-    }
-
-    .section5__logo {
-        position: absolute;
-        top: 17vw;
-        right: 15vw;
-        width: 10vw;
-
-    }
-
-    .section5__wrap .section5__inner__box {
-        align-items: center;
-
-    }
-
-    .section5__wrap .section5__box {
-        width: 60%;
-        margin: 1vw 2vw 3vw 1vw;
-
-
-    }
-
-
-    /* box1 */
-    .section5__box .section5__box__top1 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .img__inner__box1 {
-        width: 60%;
-    }
-
-    .section5__bottom {}
-
-    .section5__bottom .section5__bottom__desc {
-        font-size: 5vw;
-        text-align: center;
-    }
-
-    .section5__box .section5-1__click {
-        position: absolute;
-        right: 40vw;
-        bottom: 20vw;
-        padding: 2vw;
-        z-index: 20;
-        transform: rotate(105deg);
-    }
-
-    .section5__box .section5-1__click img {
-        width: 8vw;
-    }
-
-    .section5__box .section5-1__click .section5-1__touch {
-        font-size: 4vw;
-        text-align: right;
-        position: absolute;
-        top: 3;
-        right: 3vw;
-    }
-
-    /* box1 */
-
-    /* box2 */
-    .section5__box .section5__box__top2 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .img__inner__box2 {
-        width: 60%;
-    }
-
-    .section5__bottom {}
-
-    .section5__bottom .section5__bottom__desc2 {
-        font-size: 5vw;
-        text-align: center;
-    }
-
-    .section5__box .section5-2__click {
-        position: absolute;
-        right: 10vw;
-        bottom: 20vw;
-        padding: 3vw;
-        z-index: 20;
-    }
-
-    .section5__box .section5-2__click img {
-        width: 8vw;
-    }
-
-    .section5__box .section5-2__click .section5-2__touch {
-        font-size: 4vw;
-        text-align: right;
-        position: absolute;
-        top: 3;
-        right: -3vw;
-    }
-
-    /* box2 */
-
-    /* box3 */
-    .section5__box .section5__box__top3 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .img__inner__box3 {
-        width: 60%;
-    }
-
-    .section5__box .section5-3__click {
-        position: absolute;
-        right: 5vw;
-        bottom: 30vw;
-        padding: 3vw;
-        z-index: 20;
-        transform: rotate(-45deg);
-    }
-
-    .section5__box .section5-3__click img {
-        width: 8vw;
-    }
-
-    .section5__box .section5-3__click .section5-3__touch {
-        font-size: 4vw;
-        text-align: right;
-        position: absolute;
-        top: 3;
-        right: -3vw;
-    }
-
-    /* box3 */
-    #section5 .section5__moneys {
-        display: none;
-    }
-
-    #section5 .svg__bg {
-        top: -30vw;
-        padding: 280vw;
-        left: -234vw;
-    }
-
-    .section5__bottom {}
-
-    .section5__bottom .section5__bottom__desc3 {
-        font-size: 5vw;
-        text-align: center;
-    }
-}
-
-
-/* /section5 */
-
-/* section6 */
-#section6 {
-    width: 96vw;
-    margin: 1vw 2vw;
-    border: 0.4vw solid #000;
-    position: relative;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-    background: #FF6DCD;
-    border-radius: 1vw;
-    background-image: url(../img/noise.png);
-    background-blend-mode: color;
-}
-
-.section6__wrap {
-    width: 96vw;
-}
-
-.svg__bg {
-    position: absolute;
-    animation: spin 60s infinite linear;
-    background-image: url(../img/circle.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 100vw;
-    left: -50vw;
-    top: -20vw;
-    z-index: 0;
-
-}
-
-.section6__wrap h2 {
-    padding: 3vw 0 1vw 0;
-    font-size: 5.2vw;
-    text-shadow: 0.4vw 0.4vw #000;
-    color: white;
-    position: relative;
-    z-index: 20;
-    text-align: center;
-}
-
-.section6__logo {}
-
-.section6__logo img {
-    padding: 2vw;
-    position: absolute;
-    width: 15vw;
-    right: 2vw;
-    top: 0;
-    z-index: 20;
-}
-
-.section6__wrap .section6__desc {
-    text-align: center;
-    font-size: 1.05vw;
-    margin-bottom: 5.2vw;
-    position: relative;
-    z-index: 20;
-    text-align: center;
-}
-
-
-.section6__inner__box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 20vw;
-    width: 96vw;
-}
-
-.section6__box {
-    width: 27vw;
-    border: 0.4vw solid #000;
-    border-radius: 1vw;
-    overflow: hidden;
-    position: relative;
-    z-index: 20;
-
-}
-
-/* box1 */
-.section6__box .section6__box__top1 {
-    padding: 3vw;
-    background: #60A6FE;
-}
-
-.section6__box .section6-1__click {
-    position: absolute;
-    right: 0;
-    bottom: 10vw;
-    padding: 2vw;
-    z-index: 20;
-}
-
-.section6__box .section6-1__click img {
-    width: 5vw;
-}
-
-.section6__box .section6-1__click .section6-1__touch {
-    font-size: 1.6vw;
-    text-align: right;
-}
-
-.img__inner__box1 {
-    border: 0.4vw solid #000;
-    border-radius: 100%;
-}
-
-.section6__bottom__desc {
-    font-size: 1.85vw;
-    padding: 1.99999999vw 4vw;
-    text-align: left;
-    background: #5AD2B4;
-    border-top: 0.4vw solid #000;
-}
-
-/* box2 */
-
-.section6__box .section6__box__top2 {
-    padding: 3vw;
-    background: #FEBF60;
-
-}
-
-.section6__box .section6-2__click {
-    position: absolute;
-    right: 0;
-    bottom: 15vw;
-    padding: 2vw;
-    z-index: 20;
-}
-
-.section6__box .section6-2__click img {
-    width: 5vw;
-}
-
-.section6__box .section6-2__click .section6-2__touch {
-    font-size: 1.6vw;
-    text-align: right;
-    position: absolute;
-    top: 0;
-    right: 5vw;
-}
-
-.img__inner__box2 {
-    border: 0.4vw solid #000;
-    border-radius: 100%;
-}
-
-.section6__bottom__desc2 {
-    font-size: 1.85vw;
-    padding: 1.99999999vw 4vw;
-    text-align: left;
-    background: #5AD2B4;
-    border-top: 0.4vw solid #000;
-}
-
-/* box3 */
-
-.section6__box .section6__box__top3 {
-    padding: 3vw;
-    background: #8060FE;
-
-}
-
-.section6__bottom__desc3 {
-    font-size: 1.85vw;
-    padding: 3.3vw 10vw;
-    text-align: left;
-    background: #5AD2B4;
-    border-top: 0.4vw solid #000;
-}
-
-.section6__moneys img {
-    position: absolute;
-    left: 0;
-    top: 40vw;
-    z-index: 20;
-}
 
 @media (max-width: 1200px) {}
 
 @media (max-width: 760px) {}
 
 @media (max-width: 486px) {
+
+
+    .section10__box__inner {
+        font-size: 10vw;
+    }
+
+    .section10__box__inner .desc img {
+        width: 15vw;
+        position: relative;
+        top: 2vw;
+    }
+
     .search__game {
         margin-bottom: 3vw;
     }
@@ -2557,6 +2213,19 @@
 
     .card__game {
         width: 100%;
+    }
+
+    .section10__box {
+        padding: 2vw 0;
+        margin: 1vw 2vw 3vw 2vw !important;
+    }
+
+    .section10__box__inner {
+        font-size: 10vw;
+    }
+
+    .section10__box__inner .desc img {
+        width: 15vw;
     }
 }
 
@@ -2608,8 +2277,18 @@
 @media (max-width: 760px) {}
 
 @media (max-width: 486px) {
+
     .section11__box {
-        margin: 3vw 2vw 3vw 2vw;
+        padding: 2vw 0;
+        margin: 3vw 2vw 3vw 2vw !important;
+    }
+
+    .section11__box__inner {
+        font-size: 10vw;
+    }
+
+    .section11__box__inner .desc img {
+        width: 15vw;
     }
 }
 
@@ -2671,7 +2350,7 @@
     left: 0;
     top: 15vw;
     font-size: 1.59vw;
-    text-shadow: 0.3vw 0.3vw #000;
+    text-shadow: 0.2vw 0.2vw #000;
     color: #fff;
 }
 
@@ -2719,7 +2398,7 @@
     left: 0;
     top: 15vw;
     font-size: 1.59vw;
-    text-shadow: 0.3vw 0.3vw #000;
+    text-shadow: 0.2vw 0.2vw #000;
     color: #fff;
 }
 
@@ -2767,7 +2446,7 @@
     left: 0;
     top: 15vw;
     font-size: 1.59vw;
-    text-shadow: 5px 5px #000;
+    text-shadow: 0.2vw 0.2vw #000;
     color: #fff;
 }
 
@@ -2816,7 +2495,7 @@
     left: 0;
     top: 15vw;
     font-size: 1.59vw;
-    text-shadow: 0.3vw 0.3vw #000;
+    text-shadow: 0.2vw 0.2vw #000;
     color: #fff;
 }
 
@@ -2865,7 +2544,7 @@
     left: 0;
     top: 15vw;
     font-size: 1.59vw;
-    text-shadow: 0.3vw 0.3vw #000;
+    text-shadow: 0.2vw 0.2vw #000;
     color: #fff;
 }
 
@@ -2883,14 +2562,36 @@
         margin-bottom: 3vw;
     }
 
+    .section12__box1 .section__button1 {
+        left: 20%;
+    }
+
+    .section12__desc1 {
+        left: 60px;
+        top: 4vw;
+        font-size: 7.59vw;
+    }
+
     .section12__box1 .play {
         top: 58%;
         left: 55%;
     }
 
+    /* box1 */
+
     .section12__box2 {
         width: 100%;
         margin-bottom: 3vw;
+    }
+
+    .section12__box2 .section__button2 {
+        left: 20%;
+    }
+
+    .section12__desc2 {
+        left: 60px;
+        top: 4vw;
+        font-size: 7.59vw;
     }
 
     .section12__box2 .play {
@@ -2898,9 +2599,21 @@
         left: 55%;
     }
 
+    /* box2 */
+
     .section12__box3 {
         width: 100%;
         margin-bottom: 3vw;
+    }
+
+    .section12__box3 .section__button3 {
+        left: 20%;
+    }
+
+    .section12__desc3 {
+        left: 60px;
+        top: 4vw;
+        font-size: 7.59vw;
     }
 
     .section12__box3 .play {
@@ -2908,9 +2621,21 @@
         left: 55%;
     }
 
+    /* box3 */
+
     .section12__box4 {
         width: 100%;
         margin-bottom: 3vw;
+    }
+
+    .section12__box4 .section__button4 {
+        left: 20%;
+    }
+
+    .section12__desc4 {
+        left: 60px;
+        top: 4vw;
+        font-size: 7.59vw;
     }
 
     .section12__box4 .play {
@@ -2918,10 +2643,23 @@
         left: 55%;
     }
 
+    /* box4 */
+
     .section12__box5 {
         width: 100%;
         margin-bottom: 3vw;
     }
+
+    .section12__box5 .section__button5 {
+        left: 20%;
+    }
+
+    .section12__desc5 {
+        left: 60px;
+        top: 4vw;
+        font-size: 7.59vw;
+    }
+
 
     .section12__box5 .play {
         top: 58%;
