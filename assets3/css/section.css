@@ -1,4 +1,4 @@
-/* secction1 */
+/* section1 */
 #section1 {
     width: 96vw;
     height: 10vh;
@@ -1983,7 +1983,7 @@
     font-size: 13vw;
     font-family: "OKChan";
     color: #fff;
-    text-shadow: 10px 10px #000;
+    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
     z-index: 10;
 }
 
@@ -2668,5 +2668,180 @@
 
 }
 
+/* /section12 */
 
 /* /section12 */
+#section13 {
+    position: relative;
+}
+
+.banner3__wrap {
+    width: 96vw;
+    padding: 5vw 5vw;
+    border: 0.4vw solid #000;
+    margin: 2.5vw 2vw;
+    border-radius: 1vw;
+    text-align: center;
+    background: #FF8ED8;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.banner3__eye {
+    position: absolute;
+    background-image: url(../img/눈.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 38.5vw;
+    top: -12vw;
+    padding: 11.6vw;
+    z-index: 10;
+}
+
+.banner3__desc {
+    position: relative;
+    font-size: 12.5vw;
+    font-family: "OKChan";
+    color: #fff;
+    -webkit-text-stroke: 0.1vw #000;
+    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+    z-index: 10;
+}
+
+.banner3__wrap .banner3__desc__sub {
+    position: relative;
+    text-align: left;
+    z-index: 10;
+    right: -75vw;
+    top: -2vw;
+    font-size: 1vw;
+}
+
+.banner3__bg img {
+    position: absolute;
+    width: 80vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner3__img {
+    position: absolute;
+    background-image: url(../img/myphoto.png);
+    padding: 10vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* section13 */
+/* section14 */
+.section14__inner {
+    width: 96vw;
+    margin: 1vw 2vw 10vw 2vw;
+    font-family: 'Poppins';
+    background: #FFF271;
+    border: 0.4vw solid #000;
+    border-radius: 1vw;
+    padding: 2.5vw 3.1vw;
+}
+
+.section14__about {
+    display: flex;
+}
+
+.section14__about .left__about {
+    width: 30%;
+    font-size: 5.5vw;
+    font-weight: 900;
+    font-family: 'Poppins';
+
+}
+
+.section14__about .right__about {
+    width: 70%;
+    margin-top: 1.6vw;
+    font-size: 1.57vw;
+    font-family: 'Cafe24SsurroundAir';
+    margin-bottom: 10vw;
+    line-height: 1.6;
+}
+
+.section14__study {
+    display: flex;
+}
+
+.section14__study .left__study {
+    width: 30%;
+    font-size: 5.5vw;
+    font-weight: 900;
+    font-family: 'Poppins';
+    line-height: 1.6;
+
+}
+
+.section14__study .right__study {
+    width: 70%;
+    margin-top: 1.6vw;
+    font-size: 1.57vw;
+    margin-bottom: 10vw;
+}
+
+
+.section14__study .right__study .right__study__desc {
+    font-family: 'Cafe24SsurroundAir';
+    margin-bottom: 8vw;
+    line-height: 1.6;
+}
+
+.section14__study .right__study ul {}
+
+.section14__study .right__study ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.section14__study .right__study ul li a {
+    font-family: 'Cafe24SsurroundAir';
+}
+
+
+.section14__contect {
+    display: flex;
+}
+
+.section14__contect .contact__left {
+    width: 30%;
+    font-size: 5.5vw;
+    font-weight: 900;
+    font-family: 'Poppins';
+    line-height: 1;
+}
+
+.contact__right {
+    width: 70%;
+    margin-top: 1.6vw;
+    font-size: 1.57vw;
+    margin-bottom: 10vw;
+    font-family: 'Cafe24SsurroundAir';
+}
+
+.contact__email {
+    font-family: 'Cafe24SsurroundAir';
+    margin-bottom: 1vw;
+
+}
+
+.contact__homepage {
+    font-family: 'Cafe24SsurroundAir';
+    margin-bottom: 1vw;
+}
+
+.contact__git {
+    font-family: 'Cafe24SsurroundAir';
+}
