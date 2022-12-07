@@ -2603,6 +2603,17 @@
     }
 }
 
+@media (max-width: 1200px) {}
+
+@media (max-width: 760px) {}
+
+@media (max-width: 486px) {
+    .section11__box {
+        margin: 3vw 2vw 3vw 2vw;
+    }
+}
+
+
 /* /section11 */
 
 
@@ -2872,9 +2883,19 @@
         margin-bottom: 3vw;
     }
 
+    .section12__box1 .play {
+        top: 58%;
+        left: 55%;
+    }
+
     .section12__box2 {
         width: 100%;
         margin-bottom: 3vw;
+    }
+
+    .section12__box2 .play {
+        top: 58%;
+        left: 55%;
     }
 
     .section12__box3 {
@@ -2882,15 +2903,31 @@
         margin-bottom: 3vw;
     }
 
+    .section12__box3 .play {
+        top: 58%;
+        left: 55%;
+    }
+
     .section12__box4 {
         width: 100%;
         margin-bottom: 3vw;
+    }
+
+    .section12__box4 .play {
+        top: 58%;
+        left: 55%;
     }
 
     .section12__box5 {
         width: 100%;
         margin-bottom: 3vw;
     }
+
+    .section12__box5 .play {
+        top: 58%;
+        left: 55%;
+    }
+
 }
 
 
