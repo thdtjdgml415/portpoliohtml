@@ -750,155 +750,48 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
       <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
-    <script>
-        // scrollsmooth
-        // const lenis = new Lenis({
-        // duration: 1,
-        // easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
-        // });
-
-        // //get scroll value
-        // lenis.on("scroll", ({ scroll, limit, velocity, direction, progress }) => {
-        // console.log({ scroll, limit, velocity, direction, progress });
-        // });
-
-        // function raf(time) {
-        // lenis.raf(time);
-        // requestAnimationFrame(raf);
-        // }
-
-        // requestAnimationFrame(raf);
-
-        ////////////////////////////////////////////////////
-
-        // gsap.registerPlugin(ScrollTrigger);
-
-        // const pageContainer = document.querySelector("body");
-
-        // /* SMOOTH SCROLL */
-        //     const scroller = new LocomotiveScroll({
-        //     el: pageContainer,
-        //     smooth: true
-        // });
-
-        // scroller.on("scroll", ScrollTrigger.update);
-
-        // ScrollTrigger.scrollerProxy(pageContainer, {
-        // scrollTop(value) {
-        //     return arguments.length
-        //     ? scroller.scrollTo(value, 0, 0)
-        //     : scroller.scroll.instance.scroll.y;
-        // },
-        // getBoundingClientRect() {
-        //     return {
-        //     left: 0,
-        //     top: 0,
-        //     width: window.innerWidth,
-        //     height: window.innerHeight
-        //     };
-        // },
-        // pinType: pageContainer.style.transform ? "transform" : "fixed"
-        // });
-//////////////////////////////////////////////////////////
-
-        /**
-         * Episode #12 - Smooth Scroll.
-         * @author: Anthony Du Pont <antho.dpnt@gmail.com>
-         * @site: https://twitter.com/WebAdventurers
-         *
-         * In episode #11 of "Gist for Javascript Beginners" I explained what was a Linear Interpolation. 
-         * In this episode I'll show you another case it's really usefull.
-         *
-         * It's a trend since a few months to add smooth scroll to websites because the look-and-feel is
-         * better than the basic scroll of the browser. But how do you do this kind of effect ? Thanks
-         * to Linear Interpolation it's really easy.
-         *
-         * Example:
-         * I have a page with multiple sections and I want to apply a smooth scroll.
-         **/
-
-        // First we get the elements we need, the body and our container on which
-        // we are going to apply a smooth scroll. You will always need a container
-        // to apply a smooth scroll. You will not be able to apply it directly to
-        // the body.
-        // const body = document.body;
-        // const main = document.querySelector('#main');
-
-        // We define variables we will need later. 
-        // 2 variables to store the scroll position and 2 variables to store the 
-        // container position.
-            let sx = 0;
-            let sy = 0;
-
-            let dx = sx;
-            let dy = sy;
-
-        // The trick is to set a heigh to the body to keep the browser scroll bar.
-        body.style.height = main.clientHeight + 'px';
-
-        // Then we fix our container so it won't move when the user scrolls.
-        // We will move it ourself with the Linear Interpolation and translations.
-        main.style.position = 'fixed';
-        main.style.top = 0;
-        main.style.left = 0;
-
-        // We bind a scroll event to the window to watch scroll position.
-        window.addEventListener('scroll', scroll);
-
-        function scroll() {
-        // We only update the scroll position variables
-            sx = window.pageXOffset;
-            sy = window.pageYOffset;
-        }
-
-        // Then we start a `requestAnimationFrame` loop. 
-        // For more informations about `requestAnimationFrame` check the episode #6 of
-        // "Gist for Javascript Beginners".
-        window.requestAnimationFrame(render);
-
-        function render() {
-        // We calculate our container position by using our Linear Interpolation method.
-        // For more informations about Linear Interpolation check the episode #11 of
-        // "Gist for Javascript Beginners".
-        dx = lerp(dx, sx, 0.1);
-        dy = lerp(dy, sy, 0.1);
-        
-        // I choose to round the interpolated positions to 2 decimals for clarity.
-        // You could remove these to lines and the smooth scroll would still work.
-        dx = Math.floor(dx * 100) / 100;
-        dy = Math.floor(dy * 100) / 100;
-        
-        // Finally we translate our container to its new positions.
-        // Don't forget to add a minus sign because the container need to move in 
-        // the opposite direction of the window scroll.
-        main.style.transform = `translate(-${dx}px, -${dy}px)`;
-        
-        // And we loop again.
-        window.requestAnimationFrame(render);
-        }
-
-        // This is our Linear Interpolation method.
-        function lerp(a, b, n) {
-            return (1 - n) * a + n * b;
-        }
-        </script>
+    
         <script>
             // section1
-            const showDemo = () => {
-            document.body.style.overflow = 'auto';
-            document.scrollingElement.scrollTo(0, 0);
-            gsap.to(document.querySelector('.section1__box__inner'), { autoAlpha: 0 });
+            gsap.registerPlugin(ScrollTrigger);
 
-            gsap.utils.toArray('section').forEach((section, index) => {
-                const w = section.querySelector('.desc');
-                const [x, xEnd] = index % 2 ? ['100%', (w.scrollWidth - section.offsetWidth) * -1] : [w.scrollWidth * -1, 0];
-                gsap.fromTo(w, { x }, {
-                x: xEnd,
-                scrollTrigger: {
+            const imagess = gsap.utils.toArray(".desc");
+             console.log(imagess);
+            // const loader = document.querySelector(".loader--text");
+            //loading sourse
+            // const updateProgress = (instance) =>
+            // (loader.textContent = `${Math.round(
+            //     (instance.progressedCount * 100) / images.length
+            // )}%`);
+
+            const showDemo = () => {
+            document.body.style.overflow = "auto";
+            document.scrollingElement.scrollTo(0, 0);
+            // gsap.to(document.querySelector(".loader"), { autoAlpha: 0 });
+
+            gsap.utils.toArray(".section1__box__inner").forEach((section, index) => {
+               
+                const w = section.querySelector(".desc");
+                const [x, xEnd] =
+                index % 2
+                    ? ["100%", (w.scrollWidth - section.offsetWidth) * -1]
+                    : [w.scrollWidth * -1, 0];
+                gsap.fromTo(
+                w,
+                { x },
+                {
+                    x: xEnd,
+                    scrollTrigger: {
                     trigger: section,
-                    scrub: 0.5 } });
-                });
+                    scrub: 0.5
+                    }
+                }
+                );
+            });
             };
+            showDemo(imagess)
+            // imagesLoaded(imagess).on("progress", updateProgress).on("always", showDemo);
+
         </script>
         <script>
         //section2 Timeline
@@ -1007,7 +900,6 @@
             "https://github.com/thdtjdgml415/portpoliohtml/blob/master/assets3/img/myphoto3-min.png?raw=true"   
         ]
         var coverDiv = document.getElementById('section3__left__img')
-        console.log(coverDiv)
 
         var i = 0
         setInterval(() => {
@@ -1021,7 +913,6 @@
       <script>
         // section5
         gsap.set(".section5__moneys img",{y:500});
-    
         gsap.to(".section5__moneys img", {
         x: 0,
         y: -100,

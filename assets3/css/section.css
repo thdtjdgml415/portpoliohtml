@@ -466,7 +466,8 @@
     font-size: 13vw;
     font-family: "OKChan";
     color: #fff;
-    text-shadow: 10px 10px #000;
+    -webkit-text-stroke: 0.1vw #000;
+    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
     z-index: 10;
 }
 
@@ -1319,8 +1320,8 @@
     padding: 2vw;
     position: absolute;
     width: 15vw;
-    right: 2vw;
-    top: 0;
+    right: -1vw;
+    top: 1vw;
     z-index: 20;
 }
 
@@ -1643,6 +1644,15 @@
         position: absolute;
         top: 10vw;
         right: -1vw;
+    }
+
+    .section7__logo img {
+        padding: 2vw;
+        position: absolute;
+        width: 25vw;
+        right: -15vw;
+        top: -3vw;
+        z-index: 20;
     }
 }
 
@@ -2260,7 +2270,7 @@
 
     .section10__box {
         padding: 2vw 0;
-        margin: 1vw 2vw 3vw 2vw !important;
+        margin: 1vw 2vw 3vw 0vw !important;
     }
 
     .section10__box__inner {
